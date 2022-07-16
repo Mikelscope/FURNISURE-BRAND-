@@ -1,134 +1,194 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=ZCOOL+XiaoWei&display=swap" rel="stylesheet">
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./cascaseSS.css">
-    <title>FURNISURE</title>
-</head>
-<body>
-    <!-- FURNISURE WEBSITE RESPONSIVE TO SMALL SCREENS ONLY -->
-    <div class="container">
-        <nav id="nav-bar">
-            <div id="left-items">
-                <img id="furnisure-logo" src="./images/FURNISURE LOGO.png" alt="">
-                <p>FURNI<strong>SURE</strong></p>
-            </div>
-            <div id="right-items">
-                <ul>
-                    <li><a href="">Products</a></li>
-                    <li><a href="">Cart</a></li>
-                    <li> <a href="">My Account</a> </li>
-                </ul>
-            </div>
-        </nav>
-        <main id="main-section">
-            <div id="top-section">
-                <header>
-                    <h1>Classic</h1>
-                    <h1>Furniture</h1>
-                    <p>For Household and Office</p>
-                </header>
-                <div id="main-chair-container">
-                    <div id="orange-circle"></div>
-                    <img id="chair-1" src="./images/Modern-Chair-PNG-HD-Quality.png" alt="">
-                </div>
-            </div>
-            <div id="search-section">
-                <input type="text" placeholder="Find Furniture" name="" id="search">
-                <Button>Search</Button>
-            </div>
-        </main>
-        <div id="products-section">
-            <h3>Popular Products</h3>
-            <div id="products-scroll">
-                <div id="products-container">
-                    <img id="product-img" src="./images/sofaa.jpg" alt="">
-                    <div id="product-info">
-                        <h5>Sofa Chair</h5>
-                        <p><strong> N72,000</strong></p>
-                    </div>
-                </div>
-                <div id="products-container">
-                    <img id="product-img" src="./images/sofab.jpg" alt="">
-                    <div id="product-info">
-                        <h5>Curved Sofa</h5>
-                        <p><strong> 60,000</strong></p>
-                    </div>
-                </div>
-                <div id="products-container">
-                    <img id="product-img" src="./images/sofaa.jpg" alt="">
-                    <div id="product-info">
-                        <h5>Sofa Chair</h5>
-                        <p><strong> N72,000</strong></p>
-                    </div>
-                </div>
-                <div id="products-container">
-                    <img id="product-img" src="./images/sofab.jpg" alt="">
-                    <div id="product-info">
-                        <h5>Curved Sofa </h5>
-                        <p><strong> N172,000</strong></p>
-                    </div>
-                </div>
-                <div id="products-container">
-                    <img id="product-img" src="./images/sofaa.jpg" alt="">
-                    <div id="product-info">
-                        <h5>Sofa Chair</h5>
-                        <p><strong> N72,000</strong></p>
-                    </div>
-                </div>
-                <div id="products-container">
-                    <img id="product-img" src="./images/sofab.jpg" alt="">
-                    <div id="product-info">
-                        <h5>Curved Sofa</h5>
-                        <p><strong> N70,000</strong></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div id="bottom-details">
-            <div id="bottom-section">
-                <div id="bottom-cair-container">
-                    <div id="orange-circle"></div>
-                    <img id="chair-2" src="./images/Modern-Chair-2.png" alt="">
-                </div>
-                <div id="bottom-text">
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut ex eos voluptas illum</p>
-                    <p id="bottom-text-price"><strong> N72,000</strong></p>
+*{
+    padding: 0;
+    margin: 0;
+    font-family: poppins;
+}
+.container{
+    box-sizing: border-box;
+    background-color: rgba(156, 156, 156, 0.192);
+    overflow: hidden;
+
+}
+#nav-bar{
+    height: 8vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    background-color: #41a5995b;
+}
+#furnisure-logo{
+    width: 30px;
+    margin: 0 10px;
+}
+#left-items{
+    display: flex;
+}
+#right-items ul li  {
+    text-align: right;
+    list-style: none;
+    text-decoration: none;
+    display: inline-block;
+    margin-right: 10px;
+}
+#right-items ul li a {
+    text-decoration: none;
+}
+#right-items ul li a:hover {
+        color: rgb(0, 0, 0);
+        text-decoration: underline
+}
+    #right-items {
+    flex: 1;
+    text-align: right;
+    font-size: 0.8em;
+}
+#main-section{
+    margin-top: 8px;
+    padding: 20px;
+    background-color: white;
+
+}
+#main-section h1,#main-section p{
+    font-family: ZCOOL XiaoWei;
+}
+#main-section h1{
+    font-size: 2.5em;
+    line-height: 1em;
+}
+#main-section p{
+    font-size: 1.2em;
+}
+#top-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 0;
+}
+#orange-circle{
+    background-color: rgb(255,136,0);
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+
+}#bottom-chair-container{
+    background-color: rgb(255,136,0);
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    position: absolute;
+
+}
+#chair-1{
+    position: absolute;
+    top: 80px;
+    right: 0px;
+    width: 160px;
+}
+#chair-2{
+    width: 140px;
+    position: absolute;
+    bottom: -55px;
+    left: 5px;
+}
+#search-section{
+    margin-top: 50px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+#search{
+    line-height: 30px;
+    border-radius: 50px;
+    width: 80%;
+    padding-left: 20px;
+}
+#search-section input{
+    font-size: 0Z.2em;
+}
+#search-section button{
+    margin-top: 20px;
+    border-radius: 5px;
+    padding: 0 10px;
+    background-color: #41A599;
+    color: white;
+}
+#products-section{
+    margin-top: 10px;
+    background-color: white;
+    padding: 10px 20px;
+}
+#products-section h3{
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+#products-container{
+    width: 150px;
+    height: 150px;
+    background-color: rgba(114, 114, 114, 0.329);
+    border-radius: 20px;
+    padding-bottom: hn;
+}
+#products-scroll{
+    display: grid;
+    grid-template-rows: 1fr; 
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    overflow-x: scroll; 
+    column-gap: 10px;
+    padding-bottom: 20px;
+}
+#product-img{
+    width: 100%;
+    height: 75%;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+#product-info{
+    padding-left: 10px;
+    line-height: 0.9em;
+}
+#products-container p{
+    font-size: 0.85em;
+    color: #41A599;
+}
+#products-container h5{
+   color: rgba(0, 0, 0, 0.76);
+}
+#bottom-section{
+    background-color: white;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    padding: 30px 20px;
+}
+#bottom-text{
+    margin-left: 10px;
+}
+#bottom-text-price{
+    font-size: 1em;
+    color: #41A599;
+}
+#footer{
+    background-color: #41A599;
+    font-size: 0.8em;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 0;
+    margin-top: 10px;
+}
+#footer a:hover{
+    color: orangered;
     
-                </div>
-            </div>
-        </div>
-        <div id="footer">
-            <div id="column-1">
-                <ul>
-                    <li><a href="www.google.com">Market</a></li>
-                    <li><a href="www.google.com">Sales</a></li>
-                    <li><a href="www.google.com">IT Support</a></li>
-                </ul>
-            </div>
-            <div id="column-2">
-                <ul>
-                    <li><a href="www.facebook.com">Facebook</a></li>
-                    <li><a href="www.twitter.com">Twitter</a></li>
-                    <li><a href="www.instagram.com">Instagram</a></li>
-                </ul>
-            </div>
-            <div id="column-3">
-                <ul>
-                    <li><a href="www.facebook.com">Explore other Items</a></li>
-                    <li><input type="text"></li>
-                    <button>Go</button>
-                </ul>
-            </div>
-        </div>
-    </div>
-</body>
-</html>
+}
+#footer a{
+    text-decoration: none;
+    color: white;
+    list-style: none;
+}
+#column-2 ul, #column-3 ul, #column-1 ul{
+    list-style: none;
+    margin-left: 15px;
+}
+
+
+
